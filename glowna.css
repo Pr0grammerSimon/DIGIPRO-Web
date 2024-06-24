@@ -22,6 +22,11 @@ h1{
     font-weight: 600;
 }
 
+h2{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
 #section-1{
     display: grid;
     align-items: center;
@@ -54,7 +59,7 @@ h1{
 
 
 #section-2{
-    margin-top: 92px;
+    margin-top: 104px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -66,10 +71,10 @@ h1{
 
 #kolo{
     padding-top: 182px;
-    margin-top: 64px;
+    margin-top: 196px;
     border-radius: 50%;
     width: 2500px;
-    height: 1500px;
+    height: 1800px;
     background-color: #E4EEF8;
 }
 
@@ -108,4 +113,29 @@ h1{
 .kafelek p{
     font-size: 32px;
     font-weight: 500;
+}
+
+
+#section-4{
+    margin-top: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#kafelki-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kafelek-2{
+    width: 406px;
+    height: 204px;
+    background-color: #FAF9F6;
+    border-radius: 30px;
+    margin: 30px;
+    padding: 15px 40px 15px 40px;
+    line-height: 30px;
 }
