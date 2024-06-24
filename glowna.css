@@ -1,0 +1,55 @@
+body{
+    font-family: "Montserrat";
+    color: #1B1C27;
+    font-size: 20px;
+    padding-left: 142px;
+    padding-right: 142px;
+    padding-top: 60px;
+}
+
+
+
+#section-1{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#article-1{
+    font-size: 56px;
+    font-weight: 500;
+}
+
+
+#Więcej-usługi{
+    text-align: center;
+    background-color: #5D9CF0;
+    color: #FAF9F6;
+    font-size: 32px;
+    font-weight: 400;
+
+    margin-top: 10px;
+    width: fit-content;
+    padding: 15px 45px 15px 45px;
+    border-radius: 40px;
+
+}
+
+
+#section-2{
+    margin-top: 92px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#article-3 h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#article-3 p{
+    font-size: 22px;
+    line-height: 32px;
+}
+

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    background-color: #FAF9F6;
+}
+header{
+    position: fixed;
+    background-color: #FAF9F6;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0.01px 3px;
+    padding-left: 142px;
+    padding-right: 142px;
+}
+
+#logo{
+    width: fit-content;
+    font-size: 48px;
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: #1B1C27;
+}
+
+a:hover{
+    color: black;
+    font-weight: 500;
+    transition: font-weight .2s ease-in-out;
+}
+nav{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
+    
+}
+
