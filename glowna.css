@@ -2,12 +2,14 @@ body{
     font-family: "Montserrat";
     color: #1B1C27;
     font-size: 20px;
-    padding-left: 142px;
-    padding-right: 142px;
     padding-top: 60px;
 }
 
-
+main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #section-1{
     display: grid;
@@ -42,7 +44,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 #article-3 h1{
     font-size: 50px;
     font-weight: 400;
