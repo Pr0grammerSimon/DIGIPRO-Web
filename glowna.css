@@ -3,12 +3,23 @@ body{
     color: #1B1C27;
     font-size: 20px;
     padding-top: 60px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 main{
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 600;
 }
 
 #section-1{
@@ -23,6 +34,9 @@ main{
     font-weight: 500;
 }
 
+#article-2{
+    font-size: 10px;
+}
 
 #Więcej-usługi{
     text-align: center;
@@ -44,13 +58,54 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#article-3 h1{
-    font-size: 50px;
-    font-weight: 400;
-}
 
 #article-3 p{
     font-size: 22px;
     line-height: 32px;
 }
 
+#kolo{
+    padding-top: 182px;
+    margin-top: 64px;
+    border-radius: 50%;
+    width: 2500px;
+    height: 1500px;
+    background-color: #E4EEF8;
+}
+
+#section-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#kafelki{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kafelek{
+    width: 248px;
+    height: 296px;
+    background-color: #FAF9F6;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kafelek img{
+    width: 96px;
+    height: 96px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.kafelek p{
+    font-size: 32px;
+    font-weight: 500;
+}
