@@ -174,9 +174,7 @@ main{
     height: 700px;
     border-radius: 20px;
     position: relative;
-    margin-left: auto ;
     padding-top: 10px;
-
     text-align: center;
 }
 
@@ -216,7 +214,7 @@ main{
 
 .input{
     background-color: #FFFFFF;
-    width: 90%;
+    width: 85%;
     height: 40px;
     margin: 10px;
     border-radius: 10px;
@@ -332,7 +330,7 @@ main{
 @media (max-width: 700px){
 
     #kontakt{
-        width: 90%;
+        width: 85vw;
     }
 
 
