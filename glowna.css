@@ -1,8 +1,5 @@
 body{
-    font-family: "Montserrat";
     color: #1B1C27;
-    font-size: 20px;
-    padding-top: 60px;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -12,25 +9,15 @@ body{
 
 main{
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+
 }
 
-h1{
-    font-size: 50px;
-    font-weight: 600;
-}
-
-h2{
-    font-weight: 600;
-    margin-bottom: 16px;
-}
 
 #section-1{
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 
@@ -38,6 +25,8 @@ h2{
     font-size: 56px;
     font-weight: 500;
 }
+
+
 
 #article-2{
     font-size: 10px;
@@ -69,6 +58,8 @@ h2{
     line-height: 32px;
 }
 
+
+
 #kolo{
     padding-top: 182px;
     margin-top: 196px;
@@ -77,6 +68,7 @@ h2{
     height: 1800px;
     background-color: #E4EEF8;
 }
+
 
 #section-3{
     display: flex;
@@ -87,12 +79,15 @@ h2{
 
 #kafelki{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
 }
 
+
+
 .kafelek{
+    background-color: #1B1C27;
     width: 248px;
     height: 296px;
     background-color: #FAF9F6;
@@ -141,8 +136,6 @@ h2{
     line-height: 30px;
 }
 
-
-
 .opinia{
     width: 680px;
     margin-top: 50px;
@@ -153,11 +146,15 @@ h2{
     justify-content: end;
     align-items: end;
 }
+
 .opinia p {
     margin: 5px 10px 5px 10px;
     padding: 0px 15px 0px 15px;
 
 }
+
+
+
 
 #section-6{
     margin-top: 656px;
@@ -212,6 +209,10 @@ h2{
     font-size: 40px;
 }
 
+#wiadomosc{
+    height: 200px;
+}
+
 .input{
     background-color: #FFFFFF;
     width: 90%;
@@ -245,69 +246,207 @@ h2{
 }
 
 
-footer{
-    width: 100vw;
-
-}
-#footer-1{
-    background-color: #1B1C27;
-    width: 100%;
-    color: #FAF9F6;
-    padding-bottom: 40px;
-}
-
-#footer-1-div{
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 600px;
-}
 
 
-footer h2{
-    font-weight: 400;
+
+
+@media (max-width: 1150px){
+    #kafelki{
+        grid-template-columns: 1fr 1fr;
+    }
+    .kafelek:nth-child(odd){
+        margin-left: 220px;
+        margin-top: 30px;
+    }
+    .kafelek:nth-child(even){
+        margin-right: 220px;
+        margin-top: 30px;
+    }
+
+    #kolo{
+        height: 2200px;
+    }
 }
 
 
-#footer-1-tresc-1{
-    display: flex;
-    flex-direction: column;
+
+@media (max-width: 980px){
+    #article-1{
+        font-size: 40px;
+    }
+
+    #section-2{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    #article-3{
+        max-width: 100vw;
+
+    }
+    #article-3 p{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+        #kafelki-2{
+        grid-template-columns: 1fr;
+    }
+
+    #kolo{
+        height: 2500px;
+    }
+
 }
 
-footer a{
-    flex: 1;
-    color: #FAF9F6;
-    font-weight: 300;
-    font-size: 18px;
+
+@media (max-width: 880px){
+    #section-1{
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    #article-1 {
+        font-size: 56px;
+    }
+    #article-2{
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+    }
+    #section-1 img{
+        margin-top: 50px;
+        height: 500px;
+    }
+
+    #zdjecie{
+        display: none;
+    }
 }
 
-footer a:hover{
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    transition: font-weight .2s ease-in-out;
+
+@media (max-width: 700px){
+
+    #kontakt{
+        width: 90%;
+    }
+
+
+    #section-5 h1{
+        font-size: 30px ;
+    }
+    #section-5{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .opinia{
+        max-width: 500px;
+        font-size: 16px;
+        grid-template-columns:40px 1fr 40px;
+
+    }
+    .opinia img {
+        width: 40px;
+    }
+
+
+    h1{
+        font-size: 40px ;
+    }
+    h2{
+        font-size: 20px ;
+    }
+    body{
+        font-size: 18px ;
+    }
+
+
 }
 
-#footer-1-tresc-2{
-    display: flex;
-    flex-direction: column;
-}
+@media (max-width: 550px){
 
-#footer-1-tresc-2 p{
-    margin: 6px;
-}
+    #section-1{
+        margin-left: 0;
+    }
+    #article-1{
+        font-size: 42px ;
+    }
+    #section-1 img{
+        height: 400px;
+    }
+    #section-1 a{
+        text-align: center;
+    }
 
-#footer-1-tresc-2 a{
-    font-size: 20px;
-}
+    #kafelki{
+        grid-template-columns: 1fr;
+    }
+    .kafelek{
+        width: 168px ;
+        height: 216px ;
+    }
+    .kafelek img{
+        height: 70px ;
+    }
+    .kafelek p{
+        font-size: 25px ;
+    }
+    #kolo{
+        height: 2700px;
+    }
+    
+    .kafelek-2{
+        width: 300px;
+    }
 
-#footer-2{
-    width: 100%;
-    background-color: #171820;
-    text-align: center;
-    height: 50px;
-    color: #FAF9F6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    #section-5 h1{
+        font-size: 22px ;
+    }
+    .opinia{
+        max-width: 350px;
+        font-size: 16px;
+        grid-template-columns:30px 1fr 30px;
+        align-items: center;
+    }
+    .opinia img {
+        width: 30px;
+    }
+
+    #mail{
+        width: 102px;
+        height: 102px;
+    }
+    #mail img{
+        width: 52px;
+        height: 52px;
+    }
+    #mail{
+        top: -60px;
+    }
+    #section-6{
+        height: 800px;
+    }
+    #kontakt{
+        height: 450px !important;
+    }
+    #kontakt h2{
+        font-size: 20px !important;
+    }
+    #kontakt form{
+        margin-top: 50px;
+        padding: 10px;
+    }
+    #wiadomosc{
+        height: 100px;
+    }
+    #submit{
+        font-size: 22px;
+        width: 140px;
+        height: 45px;
+    }
+
+
 }
