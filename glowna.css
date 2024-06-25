@@ -1,6 +1,5 @@
 body{
     color: #1B1C27;
-    overflow-x: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,7 +8,6 @@ body{
 
 main{
     max-width: 1200px;
-
 }
 
 
@@ -161,6 +159,9 @@ main{
     background-color: #5D9CF0;
     height: 1000px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -383,6 +384,8 @@ main{
 
     #kafelki{
         grid-template-columns: 1fr;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .kafelek{
         width: 168px ;

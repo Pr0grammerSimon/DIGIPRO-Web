@@ -47,12 +47,37 @@ header{
     max-width: 100vw;
 }
 
+#nav-div{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 45px;
+    right: 0;
+    width: 100%;
+    background-color: #FAF9F6;
+    z-index: 3;
+    padding-bottom: 20px;
+
+}
+
+
+#nav-div a{
+    margin-left: 40px;
+    line-height: 35px;
+}
+
+
+
 #nav-button{
     position: absolute;
     right: 10px;
     display: none;
     width: 32px;
     height: 32px;
+}
+
+#nav-button:hover{
+    cursor: pointer;
 }
 
 #blur{
@@ -69,12 +94,12 @@ header{
 
 @media (max-width: 1150px) {
     main{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     header{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -123,4 +148,15 @@ nav{
     #nav-button{
         display: block !important;
     }
+    #div-header{
+        justify-content: start;
+    }
+    #logo{
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    header{
+        height: 45px;
+    }
 }
+
