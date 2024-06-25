@@ -160,5 +160,86 @@ h2{
 }
 
 #section-6{
-    margin-top: 256px;
+    margin-top: 656px;
+    background-color: #5D9CF0;
+    height: 1000px;
+    width: 100%;
+}
+
+
+#kontakt{
+    margin-top: 164px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAF9F6;
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+    position: relative;
+    margin-left: auto ;
+    padding-top: 10px;
+
+    text-align: center;
+}
+
+#mail{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -96px;
+
+    width: 162px;
+    height: 162px;
+    background-color: #FAF9F6;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #5D9CF0;
+    border-width: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#kontakt form{
+    padding: 40px;
+    margin-top: 50px;
+}
+
+#kontakt h2{
+    font-size: 40px;
+}
+
+.input{
+    background-color: #FFFFFF;
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.input::placeholder{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#submit{
+    margin-top: 30px;
+    background-color: #5D9CF0;
+    border-radius: 30px;
+    width: 175px;
+    height: 60px;
+    color: #FAF9F6;
+    font-size: 30px;
+    border: none;
 }

@@ -1,9 +1,11 @@
 body{
     margin: 0;
     background-color: #FAF9F6;
-    padding-left: 128px;
-    padding-right: 128px;
 }
+
+main{    
+    padding-left: 128px;
+    padding-right: 128px;}
 
 header{
     position: fixed;
@@ -32,7 +34,7 @@ header{
 }
 
 @media (max-width: 1150px) {
-    body{
+    main{
         padding-left: 10px;
         padding-right: 10px;
     }
