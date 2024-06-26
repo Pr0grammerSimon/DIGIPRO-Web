@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Główna Strona - DIGIPRO</title>
     <link rel="stylesheet" type="text/css" href="glowna.css">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
@@ -129,14 +129,14 @@
         <main>
             <article id="kontakt">
                 <div id="mail"><img src="Images/mail.svg"></div>
-                <form>
+                <form action="wiadomosc.php" method="post">
                     <h2>Skontaktuj się z nami!</h2>
 
-                    <input type="mail" class="input" placeholder="Email kontaktowy"><br>
-                    <input type="text" class="input" placeholder="Wybierz temat"><br>
-                    <input type="text" class="input" placeholder="Wiadomość" id="wiadomosc"><br>
+                    <input type="mail" class="input" placeholder="Email kontaktowy" id="mail-in" name="mail-in" required><br>
+                    <input type="text" class="input" placeholder="Wybierz temat" id="temat" name="temat" required><br>
+                    <input type="text" class="input" placeholder="Wiadomość" id="wiadomosc" name="wiadomosc" required><br>
 
-                    <input type="submit" id="submit" value="Wyślij">
+                    <input type="submit" id="submit" name="submit" value="Wyślij">
                 </form>
             </article>
         </main>

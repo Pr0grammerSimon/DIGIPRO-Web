@@ -158,5 +158,8 @@ nav{
     header{
         height: 45px;
     }
+    #blur{
+        height: 45px;
+    }
 }
 

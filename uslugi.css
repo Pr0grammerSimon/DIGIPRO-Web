@@ -9,11 +9,21 @@ body{
  }
  
  #tlo{
-     position: fixed;
+     position: absolute;
      top: 170px;
      width: 100%;
      height: 1000px;
      z-index: -1;
+ }
+ 
+ #container{
+     background-color: #FAF9F6;
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+ }
+ main{
+     max-width: 1200px;
  }
  
  #h1-1{
