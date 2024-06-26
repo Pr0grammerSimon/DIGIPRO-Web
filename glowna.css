@@ -134,13 +134,23 @@ main{
     line-height: 30px;
 }
 
+#carousel-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .opinia{
-    width: 680px;
+    width: 620px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 94px 1fr 58px;
+    grid-template-columns: 94px 1fr;
     justify-content: end;
     align-items: end;
 }
@@ -151,8 +161,36 @@ main{
 
 }
 
+#next{
+    position: absolute;
+    right: -30px;
+    top: 50%;
+}
+#next:hover,#prev:hover{
+    cursor:pointer;
+}
 
+#prev{
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    display: none;
+    transform: rotate(-0.5turn);
+}
 
+#opinie{
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    flex-direction: row;
+    overflow-x: auto !important;
+}
+
+#opinie::-webkit-scrollbar{
+    display: none;
+}
 
 #section-6{
     margin-top: 656px;
@@ -324,6 +362,9 @@ main{
     #zdjecie{
         display: none;
     }
+    #section-5 h1{
+        font-size: 40px ;
+    }
 }
 
 
@@ -344,11 +385,24 @@ main{
     .opinia{
         max-width: 500px;
         font-size: 16px;
-        grid-template-columns:40px 1fr 40px;
-
+        grid-template-columns:40px 1fr;
     }
     .opinia img {
         width: 40px;
+    }
+    #next{
+        width: 40px;
+        right: -20px;
+    }
+    #prev{
+        width: 40px;
+        left: -40px;
+    }
+    #carousel-div{
+    max-width: 550px;
+    }
+    #opinie{
+        max-width: 500px;
     }
 
 
@@ -409,13 +463,29 @@ main{
     .opinia{
         max-width: 350px;
         font-size: 16px;
-        grid-template-columns:30px 1fr 30px;
+        grid-template-columns:30px 1fr;
+        padding-left: 20px;
         align-items: center;
     }
     .opinia img {
         width: 30px;
     }
-
+    #next{
+        width: 30px;
+        right: -0;
+        top: 58%;
+    }
+    #prev{
+        width: 30px;
+        left: -0;
+        top: 58%;
+    }
+    #carousel-div{
+        width: 400px;
+    }
+    #opinie{
+        max-width: 350px;
+    }
     #mail{
         width: 102px;
         height: 102px;
