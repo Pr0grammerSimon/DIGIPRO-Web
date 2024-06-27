@@ -115,7 +115,7 @@ header{
 
 
 #logo{
-    width: fit-content;
+    height: 60px;
     font-size: 48px;
     font-weight: 500;
     padding-right: 50px;
@@ -154,6 +154,7 @@ nav{
     #logo{
         font-size: 35px;
         margin-left: 20px;
+        height: 45px;
     }
     header{
         height: 45px;

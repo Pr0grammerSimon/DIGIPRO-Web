@@ -1,13 +1,9 @@
-### PROTECT FILES ###
-<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
-Order Allow,Deny
-</FilesMatch>
 
 RewriteEngine on
 RewriteRule digipro glowna.html
 RewriteRule uslugi uslugi.html
-RewriteRule o-na o-nas.html
-RewriteRule teamviewer TeamViewer.html
+RewriteRule o-nas onas.html
+RewriteRule team-viewer TeamViewer.html
 RewriteRule kontakt kontakt.html
 
 

@@ -1,33 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Language" content="pl">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/kontakt.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <meta name="keywords" content="sieci komputerowe, bazy danych, cisco, mikrotik, apex, konfigurowanie, lan, monitoring, serwery, OIJ, Olimpiada Informatyczna Juniorów, Nauka Programowania, Szymon Krzywda, Arkadiusz Krzywda, DIGIPRO"/>
+    <meta name="author" content="Szymon Krzywda and Wiktor Jurek" />
+    <meta name="copyright" content="&copy; DIGIPRO - Arkadiusz Krzywda" />
+
+    <title>Kontakt - DIGIPRO</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/kontakt.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+
+    <style>
+        #section-1{
+    text-align: center;
+    margin-top: 112px;
+}
+
+#section-2{
+    margin-top: 224px;
+    background-color: #5D9CF0;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#kontakt{
+    margin-top: 164px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAF9F6;
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#mail{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -96px;
+
+    width: 162px;
+    height: 162px;
+    background-color: #FAF9F6;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #5D9CF0;
+    border-width: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#kontakt form{
+    padding: 40px;
+    margin-top: 50px;
+}
+
+#kontakt h2{
+    font-size: 40px;
+}
+
+#wiadomosc{
+    height: 200px;
+}
+
+.input{
+    background-color: #FFFFFF;
+    width: 85%;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.input::placeholder{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#submit{
+    margin-top: 30px;
+    background-color: #5D9CF0;
+    border-radius: 30px;
+    width: 175px;
+    height: 60px;
+    color: #FAF9F6;
+    font-size: 30px;
+    border: none;
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 700px){
+
+    #kontakt{
+        width: 85vw;
+    }
+}
+@media (max-width: 550px){
+
+    #mail{
+        width: 102px;
+        height: 102px;
+    }
+    #mail img{
+        width: 52px;
+        height: 52px;
+    }
+    #mail{
+        top: -60px;
+    }
+    #section-2{
+        height: 800px;
+    }
+    #kontakt{
+        height: 450px !important;
+    }
+    #kontakt h2{
+        font-size: 20px !important;
+    }
+    #kontakt form{
+        margin-top: 50px;
+        padding: 10px;
+    }
+    #wiadomosc{
+        height: 100px;
+    }
+    #submit{
+        font-size: 22px;
+        width: 140px;
+        height: 45px;
+    }
+
+}
+    </style>
+
 </head>
 <body>
-
     <header>
         <div id="nav-div">
-            <a href="glowna.html">Strona Główna</a>
-            <a href="uslugi.html">Usługi</a>
-            <a href="onas.html">O nas</a>
-            <a href="TeamViwer.html">Team Viewer</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a href="/">Strona Główna</a>
+            <a href="uslugi">Usługi</a>
+            <a href="o-nas">O nas</a>
+            <a href="team-viewer">Team Viewer</a>
+            <a href="kontakt">Kontakt</a>
         </div>
 
         <div id="div-header">
             <img id="logo" src="Images/Logo 1.svg">
             <img src="Images/nav-button.svg" id="nav-button" onclick="nav()">
             <nav>
-                <a href="glowna.html">Strona Główna</a>
-                <a href="uslugi.html">Usługi</a>
-                <a href="onas.html">O nas</a>
-                <a href="TeamViwer.html">Team Viewer</a>
-                <a href="kontakt.html">Kontakt</a>
+                <a href="/">Strona Główna</a>
+                <a href="uslugi">Usługi</a>
+                <a href="o-nas">O nas</a>
+                <a href="team-viewer">Team Viewer</a>
+                <a href="kontakt">Kontakt</a>
             </nav>
         </div>
     </header>
@@ -65,11 +217,11 @@
             <div id="footer-1-div">
                 <div id="footer-1-tresc-1">
                     <h2>Nawigacja</h2>
-                    <a href="glowna.html">Strona Główna</a>
-                    <a href="uslugi.html">Usługi</a>
-                    <a href="onas.html">O nas</a>
-                    <a href="TeamViwer.html">Team Viewer</a>
-                    <a href="kontakt.html">Kontakt</a>
+                    <a href="/">Strona Główna</a>
+                    <a href="uslugi">Usługi</a>
+                    <a href="o-nas">O nas</a>
+                    <a href="team-viewer">Team Viewer</a>
+                    <a href="kontakt">Kontakt</a>
                 </div>
                 <div id="footer-1-tresc-2">
                     <h2>Kontakt</h2>
