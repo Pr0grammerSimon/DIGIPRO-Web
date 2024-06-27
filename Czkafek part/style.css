@@ -179,10 +179,6 @@ nav{
     text-align: center;
 }
 
-#section-1{
-    height: 300px;
-}
-
 main{
     background-color: #FAF9F6;
 }
@@ -213,6 +209,17 @@ main{
 #article-3 p{
     font-size: 22px;
     line-height: 32px;
+}
+
+.logo_container {
+    width: 1400px;
+    background-color: red;
+}
+
+.logo {
+    object-fit: cover !important;
+    height: 100px !important;
+    width: 100px !important;
 }
 
 
