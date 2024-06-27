@@ -8,13 +8,12 @@ if (isset($_POST["submit"])){
     $headers = 'Content-Type: text/plain; charset=utf-8' . "\r\n";
     $headers .= 'Content-Transfer-Encoding: base64' . "\r\n";
 
-    $headers.= 'From: =?UTF-8?B?'. base64_encode($_POST["mail-in"]). '?=';
-    //echo $headers;
-    //$from = "=?UTF-8?B?".base64_encode("no-reply@digipro.pl")."?=";
+    $headers.= 'From: =?UTF-8?B?'. base64_encode("Kontakt Strona DIGIPRO"). '?=';
+
 
     $subject = '=?UTF-8?B?' . base64_encode($_POST["temat"]) . '?=';
 
-    $message = base64_encode($_POST["wiadomosc"]);
+    $message = base64_encode("Od: ".$_POST["mail-in"]."\nWiadomość: \n".$_POST["wiadomosc"]);
 
 
 
@@ -23,3 +22,4 @@ if (isset($_POST["submit"])){
 
 header("Location: glowna.html");
 ?>
+

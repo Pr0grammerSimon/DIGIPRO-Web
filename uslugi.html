@@ -1,32 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Language" content="pl">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="sieci komputerowe, bazy danych, cisco, mikrotik, apex, konfigurowanie, lan, monitoring, serwery, OIJ, Olimpiada Informatyczna Juniorów, Nauka Programowania, Szymon Krzywda, Arkadiusz Krzywda, DIGIPRO"/>
+    <meta name="author" content="Szymon Krzywda and Wiktor Jurek" />
+    <meta name="copyright" content="&copy; DIGIPRO - Arkadiusz Krzywda" />
+
     <title>Usługi - DIGIPRO</title>
-    <link rel="stylesheet" type="text/css" href="css/uslugi.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/uslugi.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+
+    <style>
+body{
+   padding-top: 180px !important;
+   background-color: #FAF9F6;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   width: 100vw;
+}
+
+#tlo{
+    position: absolute;
+    top: 170px;
+    width: 100%;
+    height: 1000px;
+    z-index: -1;
+}
+
+#container{
+    background-color: #FAF9F6;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+main{
+    max-width: 1200px;
+}
+
+#h1-1{
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#section-1{
+    height: 300px;
+}
+
+main{
+    background-color: #FAF9F6;
+}
+
+.head-article{
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+article{
+    padding-top: 120px !important;
+    padding-bottom: 100px !important;
+}
+
+
+#section-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+#section-3 h2{
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#Więcej-kontakt{
+    text-align: center;
+    background-color: #5D9CF0;
+    color: #FAF9F6;
+    font-size: 32px;
+    font-weight: 400;
+
+    margin-top: 10px;
+    width: fit-content;
+    padding: 15px 45px 15px 45px;
+    border-radius: 40px;
+
+}
+
+@media (max-width: 550px){
+    #section-3 h2{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    #section-3 h1{
+        font-size: 40px;
+    }
+    #Więcej-kontakt{
+        font-size: 20px;
+    }
+
+}
+
+
+
+    </style>
 </head>
 <body>
     <header>
         <div id="nav-div">
-            <a href="glowna.html">Strona Główna</a>
-            <a href="uslugi.html">Usługi</a>
-            <a href="onas.html">O nas</a>
-            <a href="TeamViwer.html">Team Viewer</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a href="/">Strona Główna</a>
+            <a href="uslugi">Usługi</a>
+            <a href="o-nas">O nas</a>
+            <a href="team-viewer">Team Viewer</a>
+            <a href="kontakt">Kontakt</a>
         </div>
 
         <div id="div-header">
-            <div id="logo">DIGIPRO</div>
+            <img id="logo" src="Images/Logo 1.svg">
             <img src="Images/nav-button.svg" id="nav-button" onclick="nav()">
             <nav>
-                <a href="glowna.html">Strona Główna</a>
-                <a href="uslugi.html">Usługi</a>
-                <a href="onas.html">O nas</a>
-                <a href="TeamViwer.html">Team Viewer</a>
-                <a href="kontakt.html">Kontakt</a>
+                <a href="/">Strona Główna</a>
+                <a href="uslugi">Usługi</a>
+                <a href="o-nas">O nas</a>
+                <a href="team-viewer">Team Viewer</a>
+                <a href="kontakt">Kontakt</a>
             </nav>
         </div>
     </header>
@@ -117,11 +231,11 @@
             <div id="footer-1-div">
                 <div id="footer-1-tresc-1">
                     <h2>Nawigacja</h2>
-                    <a href="glowna.html">Strona Główna</a>
-                    <a href="uslugi.html">Usługi</a>
-                    <a href="onas.html">O nas</a>
-                    <a href="TeamViwer.html">Team Viewer</a>
-                    <a href="kontakt.html">Kontakt</a>
+                    <a href="/">Strona Główna</a>
+                    <a href="uslugi">Usługi</a>
+                    <a href="o-nas">O nas</a>
+                    <a href="team-viewer">Team Viewer</a>
+                    <a href="kontakt">Kontakt</a>
                 </div>
                 <div id="footer-1-tresc-2">
                     <h2>Kontakt</h2>

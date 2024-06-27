@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Language" content="pl">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="sieci komputerowe, bazy danych, cisco, mikrotik, apex, konfigurowanie, lan, monitoring, serwery, OIJ, Olimpiada Informatyczna Juniorów, Nauka Programowania, Szymon Krzywda, Arkadiusz Krzywda, DIGIPRO"/>
+    <meta name="author" content="Szymon Krzywda and Wiktor Jurek" />
+    <meta name="copyright" content="&copy; DIGIPRO - Arkadiusz Krzywda" />
+
+    <title>O nas - DIGIPRO</title>
+    
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/o_nas.css">
     <link rel="stylesheet" href="css/footer.css">
     <style>
         @media (max-width: 700px){
-    footer h2{
-        margin-bottom: 18px;
-        margin-top: 18px;
-
-    }
 
     footer h1{
         font-size: 22px !important;
+    }
+    footer h2{
+        font-size: 18px !important;
     }
 
     
@@ -25,22 +30,22 @@
 <body>
     <header>
         <div id="nav-div">
-            <a href="glowna.html">Strona Główna</a>
-            <a href="uslugi.html">Usługi</a>
-            <a href="onas.html">O nas</a>
-            <a href="TeamViwer.html">Team Viewer</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a href="/">Strona Główna</a>
+            <a href="uslugi">Usługi</a>
+            <a href="o-nas">O nas</a>
+            <a href="team-viewer">Team Viewer</a>
+            <a href="kontakt">Kontakt</a>
         </div>
 
         <div id="div-header">
-            <div id="logo">DIGIPRO</div>
+            <img id="logo" src="Images/Logo 1.svg">
             <img src="Images/nav-button.svg" id="nav-button" onclick="nav()">
             <nav>
-                <a href="glowna.html">Strona Główna</a>
-                <a href="uslugi.html">Usługi</a>
-                <a href="onas.html">O nas</a>
-                <a href="TeamViwer.html">Team Viewer</a>
-                <a href="kontakt.html">Kontakt</a>
+                <a href="/">Strona Główna</a>
+                <a href="uslugi">Usługi</a>
+                <a href="o-nas">O nas</a>
+                <a href="team-viewer">Team Viewer</a>
+                <a href="kontakt">Kontakt</a>
             </nav>
         </div>
     </header>
@@ -51,34 +56,36 @@
         <h1>Poznaj nas!</h1>
     </section>
     <main>
-        <section id="section-2">
-            <div id="zdjecie" style="height: 448px; width: 448px; background-color: lightgrey;"></div>
-            <article id="article-3">
-                <h2>Historia firmy</h2>
-                <p>Curabitur euismod enim sed neque mattis, id tincidunt ex laoreet. Praesent nec lacus vestibulum, dictum mi sit amet, finibus ex. Mauris nec magna semper felis egestas feugiat a eu tortor. Nulla quis rhoncus magna, non ultricies urna. Cras ornare maximus magna, eu ultricies lorem tincidunt ut.</p>
-            </article>
-        </section>
-        <section id="section-2">
-            <article id="article-3">
-                <h2>Zespół</h2>
-                <p>Curabitur euismod enim sed neque mattis, id tincidunt ex laoreet. Praesent nec lacus vestibulum, dictum mi sit amet, finibus ex. Mauris nec magna semper felis egestas feugiat a eu tortor. Nulla quis rhoncus magna, non ultricies urna. Cras ornare maximus magna, eu ultricies lorem tincidunt ut.</p>
-            </article>
-            <div id="right" id="zdjecie" style="height: 448px; width: 448px; background-color: lightgrey;"></div>
-        </section>
-        <section id="section-2">
-            <div id="zdjecie" style="height: 448px; width: 448px; background-color: lightgrey;"></div>
-            <article id="article-3">
-                <h2>Nasze wartości</h2>
-                <p>Curabitur euismod enim sed neque mattis, id tincidunt ex laoreet. Praesent nec lacus vestibulum, dictum mi sit amet, finibus ex. Mauris nec magna semper felis egestas feugiat a eu tortor. Nulla quis rhoncus magna, non ultricies urna. Cras ornare maximus magna, eu ultricies lorem tincidunt ut.</p>
-            </article>
-        </section>
-        <section id="section-2">
-            <article id="article-3">
-                <h2>Kariera</h2>
-                <p>Curabitur euismod enim sed neque mattis, id tincidunt ex laoreet. Praesent nec lacus vestibulum, dictum mi sit amet, finibus ex. Mauris nec magna semper felis egestas feugiat a eu tortor. Nulla quis rhoncus magna, non ultricies urna. Cras ornare maximus magna, eu ultricies lorem tincidunt ut.</p>
-            </article>
-            <div id="right" id="zdjecie" style="height: 448px; width: 448px; background-color: lightgrey;"></div>
-        </section>
+        <div id="main">
+            <section id="section-2">
+                <div class="zdjecie" style="background-color: lightgrey;"></div>
+                <article id="article-3">
+                    <h2>Historia firmy</h2>
+                    <p>Curabitur euismod enim sed neque mattis, id tincidunt ex laoreet. Praesent nec lacus vestibulum, dictum mi sit amet, finibus ex. Mauris nec magna semper felis egestas feugiat a eu tortor. Nulla quis rhoncus magna, non ultricies urna. Cras ornare maximus magna, eu ultricies lorem tincidunt ut.</p>
+                </article>
+            </section>
+            <section id="section-3">
+                <article id="article-3">
+                    <h2>Zespół</h2>
+                    <p>Curabitur euismod enim sed neque mattis, id tincidunt ex laoreet. Praesent nec lacus vestibulum, dictum mi sit amet, finibus ex. Mauris nec magna semper felis egestas feugiat a eu tortor. Nulla quis rhoncus magna, non ultricies urna. Cras ornare maximus magna, eu ultricies lorem tincidunt ut.</p>
+                </article>
+                <div id="right" class="zdjecie" style="background-color: lightgrey;"></div>
+            </section>
+            <section id="section-2">
+                <div class="zdjecie" style="background-color: lightgrey;"></div>
+                <article id="article-3">
+                    <h2>Nasze wartości</h2>
+                    <p>Curabitur euismod enim sed neque mattis, id tincidunt ex laoreet. Praesent nec lacus vestibulum, dictum mi sit amet, finibus ex. Mauris nec magna semper felis egestas feugiat a eu tortor. Nulla quis rhoncus magna, non ultricies urna. Cras ornare maximus magna, eu ultricies lorem tincidunt ut.</p>
+                </article>
+            </section>
+            <section id="section-3">
+                <article id="article-3">
+                    <h2>Kariera</h2>
+                    <p>Curabitur euismod enim sed neque mattis, id tincidunt ex laoreet. Praesent nec lacus vestibulum, dictum mi sit amet, finibus ex. Mauris nec magna semper felis egestas feugiat a eu tortor. Nulla quis rhoncus magna, non ultricies urna. Cras ornare maximus magna, eu ultricies lorem tincidunt ut.</p>
+                </article>
+                <div id="right" class="zdjecie" style="background-color: lightgrey;"></div>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -86,11 +93,11 @@
             <div id="footer-1-div">
                 <div id="footer-1-tresc-1">
                     <h2>Nawigacja</h2>
-                    <a href="glowna.html">Strona Główna</a>
-                    <a href="uslugi.html">Usługi</a>
-                    <a href="onas.html">O nas</a>
-                    <a href="TeamViwer.html">Team Viewer</a>
-                    <a href="kontakt.html">Kontakt</a>
+                    <a href="/">Strona Główna</a>
+                    <a href="uslugi">Usługi</a>
+                    <a href="o-nas">O nas</a>
+                    <a href="team-viewer">Team Viewer</a>
+                    <a href="kontakt">Kontakt</a>
                 </div>
                 <div id="footer-1-tresc-2">
                     <h2>Kontakt</h2>
@@ -105,7 +112,6 @@
         </div>
         </div>
     </footer>
-
 </body>
 
 <script src="nav.js"></script>
