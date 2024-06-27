@@ -1,0 +1,14 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule digipro glowna.html
+RewriteRule uslugi uslugi.html
+RewriteRule o-na o-nas.html
+RewriteRule teamviewer TeamViewer.html
+RewriteRule kontakt kontakt.html
+
+
+DirectoryIndex glowna.html
