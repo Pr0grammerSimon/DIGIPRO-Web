@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/kontakt.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+
+    <header>
+        <div id="nav-div">
+            <a href="glowna.html">Strona Główna</a>
+            <a href="uslugi.html">Usługi</a>
+            <a href="onas.html">O nas</a>
+            <a href="TeamViwer.html">Team Viewer</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+
+        <div id="div-header">
+            <img id="logo" src="Images/Logo 1.svg">
+            <img src="Images/nav-button.svg" id="nav-button" onclick="nav()">
+            <nav>
+                <a href="glowna.html">Strona Główna</a>
+                <a href="uslugi.html">Usługi</a>
+                <a href="onas.html">O nas</a>
+                <a href="TeamViwer.html">Team Viewer</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+    <div id="blur"></div>
+
+    <main>
+        <section id="section-1">
+            <h1>Kontakt</h1>
+            <p>Tel: 601 148 730</p>
+            <p>Email: digipro@gmail.com</p>
+        </section>
+
+
+    </main>
+    <section id="section-2">
+        <main>
+            <article id="kontakt">
+                <div id="mail"><img src="Images/mail.svg"></div>
+                <form action="wiadomosc.php" method="post">
+                    <h2>Skontaktuj się z nami!</h2>
+
+                    <input type="mail" class="input" placeholder="Email kontaktowy" id="mail-in" name="mail-in" required><br>
+                    <input type="text" class="input" placeholder="Wybierz temat" id="temat" name="temat" required><br>
+                    <input type="text" class="input" placeholder="Wiadomość" id="wiadomosc" name="wiadomosc" required><br>
+
+                    <input type="submit" id="submit" name="submit" value="Wyślij">
+                </form>
+            </article>
+        </main>
+    </section>
+
+
+    <footer>
+        <div id="footer-1">
+            <div id="footer-1-div">
+                <div id="footer-1-tresc-1">
+                    <h2>Nawigacja</h2>
+                    <a href="glowna.html">Strona Główna</a>
+                    <a href="uslugi.html">Usługi</a>
+                    <a href="onas.html">O nas</a>
+                    <a href="TeamViwer.html">Team Viewer</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div id="footer-1-tresc-2">
+                    <h2>Kontakt</h2>
+                    <p><a href="tel:+48601148730">Tel: 601 148 730</a></p>
+                    <p><a href="mailto:digipro@gmail.com">Email: digipro@gmail.com</a></p>
+                    <h1>DIGIPRO</h1>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2">
+            <span>&copy; Szymon Krzywda i Wiktor Jurek</span>
+        </div>
+        </div>
+    </footer>
+
+</body>
+<script src="nav.js"></script>
+</html>
