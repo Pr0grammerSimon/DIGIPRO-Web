@@ -19,8 +19,7 @@ if (isset($_POST["submit"])){
 
 
     mail($to,$subject,$message,$headers);
-
 }
 
-header("url=glowna.html");
+header("Location: glowna.html");
 ?>
