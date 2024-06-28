@@ -1,9 +1,14 @@
 
 RewriteEngine on
+
+<FilesMatch "\.(php|js|css|htc|png|gif|jpe?g|ico|xml|csv|txt|swf|flv|mp4|webm|ogv|mp3|ogg|oga|eot|woff|svg|ttf|pdf|gz)$">
+RewriteEngine Off
+</FilesMatch>
+
 RewriteRule digipro glowna.html
 RewriteRule uslugi uslugi.html
 RewriteRule o-nas onas.html
-RewriteRule team-viewer TeamViewer.html
+RewriteRule team-viewer teamviewer.html
 RewriteRule kontakt kontakt.html
 
 

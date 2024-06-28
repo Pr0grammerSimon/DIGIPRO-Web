@@ -8,13 +8,26 @@
     <meta name="author" content="Szymon Krzywda and Wiktor Jurek" />
     <meta name="copyright" content="&copy; DIGIPRO - Arkadiusz Krzywda" />
 
-    <title>Kontakt - DIGIPRO</title>
+    <title>TeamViewer - DIGIPRO</title>
 
-    <link rel="stylesheet" type="text/css" href="css/header.css"/>
-    <link rel="stylesheet" type="text/css" href="css/kontakt.css"/>
-    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/teamviewer.css">
+    <link rel="stylesheet" href="css/footer.css">
 
-   
+    <style>
+        @media (max-width: 700px){
+
+    footer h1{
+        font-size: 20px !important;
+    }
+    footer h2{
+        font-size: 18px !important;
+    }
+}
+    footer h2{
+        font-size: 40px;
+    }
+    </style>
 
 </head>
 <body>
@@ -41,34 +54,24 @@
     </header>
     <div id="blur"></div>
 
+
     <main>
-        <section id="section-1">
-            <h1>Kontakt</h1>
-            <p>Tel: 601 148 730</p>
-            <p>Email: biuro@digipro.pl</p>
+        <section id="section-4">
+            <div class="logo_container">
+                <img class="logo" src="Images/teamviewerimg.png">
+            </div>
+            <h1>Team Viewer</h1>
         </section>
-
-
+        <section id="section-5">
+            <h2>Pobierz:</h2>
+            <form action="">
+                <input class="input" type="button" value="Zdalną pomoc">
+                <input class="input" type="button" value="TV Host">
+            </form>
+        </section>
     </main>
-    <section id="section-2">
-        <main>
-            <article id="kontakt">
-                <div id="mail"><img src="Images/mail.svg"></div>
-                <form action="wiadomosc.php" method="post">
-                    <h2>Skontaktuj się z nami!</h2>
 
-                    <input type="email" class="input" placeholder="Email kontaktowy" id="mail-in" name="mail-in" required><br>
-                    <input type="text" class="input" placeholder="Wybierz temat" id="temat" name="temat" required><br>
-                    <input type="text" class="input" placeholder="Wiadomość" id="wiadomosc" name="wiadomosc" required><br>
-
-                    <input type="submit" id="submit" name="submit" value="Wyślij">
-                </form>
-            </article>
-        </main>
-    </section>
-
-
-    <footer>
+   <footer>
         <div id="footer-1">
             <div id="footer-1-div">
                 <div id="footer-1-tresc-1">

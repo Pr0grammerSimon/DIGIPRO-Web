@@ -164,3 +164,7 @@ nav{
     }
 }
 
+#active {
+    font-weight: 600;
+}
+
