@@ -1,12 +1,12 @@
 footer{
     width: 100vw;
-
 }
 #footer-1{
+    padding-top: 48px; /* tutaj */
     background-color: #1B1C27;
     width: 100%;
     color: #FAF9F6;
-    padding-bottom: 40px;
+    padding-bottom: 48px; /* tutaj */
 }
 
 #footer-1-div{
@@ -18,7 +18,8 @@ footer{
 }
 
 footer h2{
-    font-weight: 400;
+    font-weight: 400 !important; /* tutaj */
+    font-size: 40px !important; /* tutaj */
 }
 
 
@@ -70,7 +71,7 @@ footer a:hover{
         font-size: 15px;
     }
     footer h2{
-        font-size: 18px;
+        font-size: 18px !important;
     }
     #footer-1-tresc-2 p a{
         font-size: 15px;
