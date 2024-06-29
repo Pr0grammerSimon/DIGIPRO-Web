@@ -1,0 +1,10 @@
+
+RewriteEngine on
+RewriteRule digipro glowna.html
+RewriteRule uslugi uslugi.html
+RewriteRule o-nas onas.html
+RewriteRule team-viewer TeamViewer.html
+RewriteRule kontakt kontakt.html
+
+
+DirectoryIndex glowna.html
