@@ -5,8 +5,8 @@
 
 #section-2{
     margin-top: 224px;
-    background-color: #5D9CF0;
-    height: 1000px;
+    background-color: #1179db;
+    padding: 0px 0px 96px 0px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -15,7 +15,6 @@
 
 
 #kontakt{
-    margin-top: 164px;
     margin-left: auto;
     margin-right: auto;
     background-color: #FAF9F6;
@@ -40,7 +39,7 @@
     background-color: #FAF9F6;
     border-radius: 50%;
     border-style: solid;
-    border-color: #5D9CF0;
+    border-color: #1179db;
     border-width: 7px;
 
     display: flex;
@@ -86,24 +85,24 @@
     margin-top: 16px;
 
     text-align: center;
-    background-color: #5D9CF0;
-    color: #FAF9F6;
+    background-color: #1179db;
+    color: #FAFAF0 !important;
     font-size: 32px;
     font-weight: 500;
 
     width: fit-content;
-    padding: 14px 48px 14px 48px; /* stary: padding: 15px 45px 15px 45px; */
+    padding: 14px 48px 14px 48px !important; /* stary: padding: 15px 45px 15px 45px; */
     border-radius: 40px;
     border: none;
 
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 
     transition: opacity .2s;
+    cursor: pointer;
 }
 
 #submit:hover{
     opacity: 0.8;
-    cursor: pointer;
 }
 
 
@@ -113,8 +112,15 @@
     #kontakt{
         width: 85vw;
     }
+    #section-2 {
+        padding: 0px 0px 136px 0px;
+    }
 }
 @media (max-width: 550px){
+
+    #section-2 {
+        height: auto;
+    }
 
     #mail{
         width: 102px;
@@ -127,11 +133,8 @@
     #mail{
         top: -60px;
     }
-    #section-2{
-        height: 800px;
-    }
+
     #kontakt{
-        height: 450px !important;
     }
     #kontakt h2{
         font-size: 20px !important;
@@ -145,8 +148,7 @@
     }
     #submit{
         font-size: 22px;
-        width: 140px;
-        height: 45px;
+        padding: 14px 48px 36px 48px !important;
     }
 
 }

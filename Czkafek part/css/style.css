@@ -279,10 +279,10 @@ main {
 
 .input {
     text-align: center;
-    background-color: #5D9CF0;
-    color: #FAF9F6;
-    font-size: 32px;
-    font-weight: 500;
+    background-color: #1179db;
+    color: #FAFAF0 !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
 
     width: fit-content;
     padding: 14px 48px 14px 48px;
@@ -295,6 +295,7 @@ main {
 
 .input:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 
