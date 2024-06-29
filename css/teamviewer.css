@@ -2,7 +2,7 @@
 
 
 body{
-    margin: 0;
+    margin: 0px;
     font-size: 20px;
     font-family: "Montserrat";
     padding-top: 70px !important;
@@ -13,6 +13,10 @@ body{
     align-items: center;
     width: 100vw;
     color: #1B1C27;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
  }
 
 h1{
@@ -121,10 +125,10 @@ main {
 
 .input {
     text-align: center;
-    background-color: #5D9CF0;
-    color: #FAF9F6;
-    font-size: 32px;
-    font-weight: 500;
+    background-color: #1179db;
+    color: #FAFAF0 !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
 
     width: fit-content;
     padding: 14px 48px 14px 48px;
@@ -137,6 +141,7 @@ main {
 
 .input:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 
