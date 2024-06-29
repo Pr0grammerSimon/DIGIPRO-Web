@@ -1,5 +1,7 @@
 footer{
     width: 100vw;
+    position: absolute;
+    bottom: 0px;
 }
 #footer-1{
     background-color: #1B1C27;

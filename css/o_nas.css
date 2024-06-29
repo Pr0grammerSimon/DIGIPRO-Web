@@ -11,8 +11,9 @@ body{
     align-items: center;
     width: 100vw;
     color: #1B1C27;
+    height: calc(100% + 500px);
  }
-
+ 
 h1{
     font-size: 64px;
     font-weight: 600;
