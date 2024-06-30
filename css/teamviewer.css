@@ -74,6 +74,7 @@ main {
     align-items: center;
     flex-direction: column;
     padding-bottom: 112px;
+    margin-bottom: 400px;
 }
 
 
@@ -202,6 +203,12 @@ main {
     }
 }
 
+
+@media (max-width: 550px){
+    h1{
+        font-size: 36px !important;
+    }
+}
 
 
 footer{

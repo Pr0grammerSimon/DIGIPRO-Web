@@ -70,6 +70,7 @@ h4 {
 
 #Więcej-usługi:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 
@@ -107,17 +108,25 @@ h4 {
     flex-direction: column;
 }
 
+
 #kafelki{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
+    box-sizing: border-box;
 }
 
-
+.caly_kaf{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
 
 .kafelek{
-    background-color: #1B1C27;
     width: 248px;
     height: 296px;
     background-color: #FAF9F6;
@@ -126,6 +135,9 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: rotateY(0deg);
+
+    transition: all 0.25s 0.25s;
 }
 
 .kafelek img{
@@ -139,6 +151,53 @@ h4 {
     font-size: 32px;
     font-weight: 500;
 }
+
+.odwrocony{
+    width: 248px;
+    height: 296px;
+    background-color: #FAF9F6;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    transform: rotateY(90deg);
+    text-align: center;
+    line-height: 22px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    transition: all 0.25s;
+}
+
+.odwrocony a{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.odwrocony a:hover{
+    font-weight: 600;
+}
+
+
+.caly_kaf:hover div.kafelek{
+    transform: rotateY(90deg);
+
+    transition: all 0.25s;
+    
+}
+
+.caly_kaf:hover div.odwrocony{
+   transform: rotateY(0deg);
+
+   transition: all 0.25s 0.25s;
+}
+
 
 
 #section-4{
@@ -338,6 +397,7 @@ h4 {
 #submit:hover{
     opacity: 0.8;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 
@@ -346,13 +406,10 @@ h4 {
 @media (max-width: 1150px){
     #kafelki{
         grid-template-columns: 1fr 1fr;
+        padding-left: 20%;
+        padding-right: 20%;
     }
-    .kafelek:nth-child(odd){
-        margin-left: 220px;
-        margin-top: 30px;
-    }
-    .kafelek:nth-child(even){
-        margin-right: 220px;
+    .kafelek{
         margin-top: 30px;
     }
 
@@ -432,6 +489,26 @@ h4 {
 
 @media (max-width: 700px){
 
+    #kafelki{
+        grid-template-columns: 1fr;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .kafelek{
+        width: 270px;
+        height: 332px;
+    }
+
+    .odwrocony{
+        width: 270px;
+        height: 332px;
+    }
+
+    #kolo{
+        height: 3200px;
+    }
+
     #kontakt{
         width: 85vw;
     }
@@ -497,24 +574,6 @@ h4 {
         text-align: center;
     }
 
-    #kafelki{
-        grid-template-columns: 1fr;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .kafelek{
-        width: 168px ;
-        height: 216px ;
-    }
-    .kafelek img{
-        height: 70px ;
-    }
-    .kafelek p{
-        font-size: 25px ;
-    }
-    #kolo{
-        height: 2700px;
-    }
     
     .kafelek-2{
         width: 300px;
