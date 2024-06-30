@@ -30,13 +30,13 @@ footer h2{
 footer a{
     flex: 1;
     color: #FAF9F6;
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: 300 !important;
+    font-size: 18px !important;
 }
 
 footer a:hover{
     color: rgb(255, 255, 255);
-    font-weight: 400;
+    font-weight: 400 !important;
     transition: font-weight .2s ease-in-out;
 }
 
@@ -50,7 +50,7 @@ footer a:hover{
 }
 
 #footer-1-tresc-2 a{
-    font-size: 20px;
+    font-size: 20px !important;
 }
 
 #footer-2{
@@ -70,19 +70,20 @@ footer a:hover{
 
 @media (max-width: 700px){
     footer a{
-        font-size: 15px;
+        font-size: 15px !important;
     }
     footer h2{
-        font-size: 16px;
+        font-size: 16px !important;
     }
     #footer-1-tresc-2 p a{
-        font-size: 15px;
+        font-size: 15px !important;
     }
     footer h1{
-        font-size: 22px;
+        font-size: 22px !important;
     }
     #footer-1{
-        padding: 15px;
+        padding: 15px !important;
     }
     
 }
+
