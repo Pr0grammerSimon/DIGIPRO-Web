@@ -459,6 +459,28 @@ h4 {
         height: 2500px;
     }
 
+    #section-5 h1{
+        font-size: 35px !important;
+    }
+    .opinia{
+        font-size: 16px !important;
+        max-width: 480px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 70px 1fr;
+    }
+    .opinia img{
+        width: 60px;
+    }
+    #opinie{
+        max-width: 480px;
+    }
+    #carousel-div{
+        width: 520px;
+    }
+
+
+
 }
 
 
@@ -520,10 +542,8 @@ h4 {
     #kontakt{
         width: 85vw;
     }
-
-
     #section-5 h1{
-        font-size: 30px ;
+        font-size: 30px !important;
     }
     #section-5{
         padding-left: 60px;
@@ -581,6 +601,7 @@ h4 {
     #section-1 a{
         text-align: center;
     }
+    
 
     
     .kafelek-2{
@@ -627,6 +648,11 @@ h4 {
     #mail{
         top: -60px;
     }
+
+    #section-5 h1{
+        font-size: 26px !important;
+    }
+
     #section-6{
         height: 800px;
     }
@@ -684,6 +710,24 @@ h4 {
     .kafelek-2{
         width: 248px;
     }
+    #section-5 h1{
+        font-size: 20px !important;
+    }
+    .opinia{
+        font-size: 12px !important;
+        max-width: 280px;
+        padding-left: 0;
+    }
+    .opinia img{
+        width: 26px;
+    }
+    #opinie{
+        max-width: 280px;
+    }
+    #carousel-div{
+        width: 330px;
+    }
+
 
 
 }
