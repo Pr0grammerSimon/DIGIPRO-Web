@@ -118,6 +118,9 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: rotateY(0deg);
+
+    transition: all 0.25s 0.25s;
 }
 
 .kafelek img{
@@ -150,6 +153,8 @@ main{
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
+
+    transition: all 0.25s;
 }
 
 .odwrocony a{
@@ -164,22 +169,19 @@ main{
 
 
 .caly_kaf:hover div.kafelek{
-    animation: obrot 0.24s linear forwards;
+    transform: rotateY(90deg);
+
+    transition: all 0.25s;
+    
 }
 
 .caly_kaf:hover div.odwrocony{
-    animation: obrot 0.24s 0.24s linear forwards reverse;
+   transform: rotateY(0deg);
+
+   transition: all 0.25s 0.25s;
 }
 
 
-@keyframes obrot{
-    0%{
-        transform: rotateY(0deg);
-    }
-    100%{
-        transform: rotateY(90deg);
-    }
-}
 
 #section-4{
     margin-top: 324px;
