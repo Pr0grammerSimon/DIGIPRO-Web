@@ -10,6 +10,23 @@ main{
     max-width: 1200px;
 }
 
+p {
+    line-height: 150% !important;
+}
+h1 {
+    font-size: 56px !important;
+}
+h2 {
+    font-size: 48px !important;
+}
+h3 {
+    font-size: 40px !important;
+}
+h4 {
+    font-size: 32px !important;
+    font-weight: 500 !important;
+}
+
 
 #section-1{
     display: grid;
@@ -67,7 +84,7 @@ main{
 }
 
 #article-3 p{
-    font-size: 22px;
+    font-size: 24px;
     line-height: 32px;
 }
 
@@ -139,14 +156,27 @@ main{
     grid-template-columns: 1fr 1fr;
 }
 
+.kafelek-2 h4 {
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
 .kafelek-2{
-    width: 406px;
-    height: 204px;
+    width: 424px;
     background-color: #FAF9F6;
-    border-radius: 30px;
-    margin: 30px;
-    padding: 15px 40px 15px 40px;
-    line-height: 30px;
+    border-radius: 32px;
+    margin: 32px;
+    padding: 32px 40px 32px 40px;
+    line-height: 150% !important;
+
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+    transition: transform .2s;
+
+}
+.kafelek-2:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
 }
 
 #carousel-div{
@@ -287,17 +317,26 @@ main{
 }
 
 #submit{
-    margin-top: 30px;
+    margin-top: 16px;
+
+    text-align: center;
     background-color: #1179db;
     color: #FAFAF0 !important;
-    border-radius: 30px;
-    width: 175px;
-    height: 60px;
-    font-size: 30px;
+    font-size: 32px;
+    font-weight: 500;
+
+    width: fit-content;
+    padding: 14px 48px 14px 48px !important; /* stary: padding: 15px 45px 15px 45px; */
+    border-radius: 40px;
     border: none;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+
+    transition: opacity .2s;
 }
 
 #submit:hover{
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -319,6 +358,9 @@ main{
 
     #kolo{
         height: 2200px;
+    }
+    #section-4 {
+        margin-bottom: 600px;
     }
 }
 
@@ -346,7 +388,8 @@ main{
     h1{
         font-size: 40px;
     }
-        #kafelki-2{
+
+    #kafelki-2{
         grid-template-columns: 1fr;
     }
 
@@ -440,11 +483,12 @@ main{
 
 @media (max-width: 550px){
 
+    h1 {
+        font-size: 48px !important;
+    }
+
     #section-1{
         margin-left: 0;
-    }
-    #article-1{
-        font-size: 42px ;
     }
     #section-1 img{
         height: 400px;
@@ -475,10 +519,10 @@ main{
     .kafelek-2{
         width: 300px;
     }
-
-    #section-5 h1{
-        font-size: 22px ;
+    .kafelek-2:hover {
+        transform: scale(1.1) !important;
     }
+
     .opinia{
         max-width: 350px;
         font-size: 16px;
@@ -536,6 +580,10 @@ main{
         font-size: 22px;
         width: 140px;
         height: 45px;
+    }
+
+    #section-4 {
+        margin-bottom: 400px;
     }
 
 
