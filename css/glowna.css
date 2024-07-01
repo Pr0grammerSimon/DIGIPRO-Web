@@ -716,7 +716,7 @@ h4 {
         font-size: 20px !important;
     }
     .opinia{
-        font-size: 12px !important;
+        font-size: 12.8px !important;
         max-width: 280px;
         padding-left: 0;
     }
@@ -727,7 +727,13 @@ h4 {
         max-width: 280px;
     }
     #carousel-div{
-        width: 330px;
+        width: 280px;
+    }
+    #prev{
+        left: -38px;
+    }
+    #next{
+        right: -34px;
     }
 
 
